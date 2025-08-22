@@ -61,6 +61,11 @@
             padding-top: 20px;
             border-top: 1px solid #ecf0f1;
         }
+        .email-protected {
+            font-family: monospace; /* Makes it look like a code */
+            letter-spacing: 0.1em; /* Adds space between characters */
+            color: #3498db; /* A color that stands out */
+        }
     </style>
 </head>
 <body>
@@ -238,7 +243,7 @@
             <p><strong>For privacy concerns or questions about this policy:</strong></p>
             <ul>
                 <li>Contact us through the app store listing</li>
-                <li>Email: triliza.app@gmail.com</li>
+                <li>Email: <span id="email-contact" class="email-protected"></span></li>
                 <li>Submit bug reports through the app's reporting feature</li>
             </ul>
         </div>
@@ -256,5 +261,29 @@
             <p>Triliza - A privacy-first gaming experience</p>
         </div>
     </div>
+    <script>
+        (function() {
+            // Email protection with multiple obfuscation layers
+            const parts = ['triliza', '.app', '@', 'gmail', '.com'];
+            const emailElement = document.getElementById('email-contact');
+            
+            // Create clickable email with mailto
+            const link = document.createElement('a');
+            link.href = 'mailto:' + parts.join('');
+            link.textContent = parts.join('');
+            link.style.textDecoration = 'none';
+            link.style.color = '#3498db';
+            
+            // Add hover effect
+            link.addEventListener('mouseenter', function() {
+                this.style.textDecoration = 'underline';
+            });
+            link.addEventListener('mouseleave', function() {
+                this.style.textDecoration = 'none';
+            });
+            
+            emailElement.appendChild(link);
+        })();
+    </script>
 </body>
 </html>
