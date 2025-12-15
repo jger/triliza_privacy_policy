@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,45 +15,55 @@
             padding: 20px;
             background-color: #f5f5f5;
         }
+
         .container {
             background: white;
             padding: 40px;
             border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
+
         h1 {
             color: #2c3e50;
             border-bottom: 3px solid #3498db;
             padding-bottom: 10px;
         }
+
         h2 {
             color: #34495e;
             margin-top: 30px;
             margin-bottom: 15px;
         }
+
         h3 {
             color: #7f8c8d;
             margin-top: 25px;
             margin-bottom: 10px;
         }
-        p, li {
+
+        p,
+        li {
             margin-bottom: 10px;
         }
+
         ul {
             padding-left: 20px;
         }
+
         .highlight {
             background-color: #ecf0f1;
             padding: 15px;
             border-left: 4px solid #3498db;
             margin: 20px 0;
         }
+
         .contact {
             background-color: #e8f5e8;
             padding: 15px;
             border-radius: 5px;
             margin: 20px 0;
         }
+
         .last-updated {
             text-align: center;
             color: #7f8c8d;
@@ -61,41 +72,52 @@
             padding-top: 20px;
             border-top: 1px solid #ecf0f1;
         }
+
         .email-protected {
-            font-family: monospace; /* Makes it look like a code */
-            letter-spacing: 0.1em; /* Adds space between characters */
-            color: #3498db; /* A color that stands out */
+            font-family: monospace;
+            /* Makes it look like a code */
+            letter-spacing: 0.1em;
+            /* Adds space between characters */
+            color: #3498db;
+            /* A color that stands out */
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h1>Privacy Policy for Triliza</h1>
-        
+
         <div class="highlight">
-            <strong>Last Updated:</strong> October 10, 2025<br>
-            <strong>App Version:</strong> 1.12.0<br>
+            <strong>Last Updated:</strong> December 15, 2025<br>
+            <strong>App Version:</strong> 1.13.0<br>
             <strong>Effective Date:</strong> January 1, 2025
         </div>
 
-        <p>This Privacy Policy describes how Triliza ("we," "our," or "us") collects, uses, and protects your information when you use our mobile application Triliza (the "App").</p>
+        <p>This Privacy Policy describes how Triliza ("we," "our," or "us") collects, uses, and protects your
+            information when you use our mobile application Triliza (the "App").</p>
 
         <h2>1. Information We Collect</h2>
 
         <h3>1.1 Analytics Data (Optional)</h3>
-        <p>With your explicit consent, we may collect anonymous analytics data to improve the App's performance and user experience:</p>
+        <p>With your explicit consent, we may collect anonymous analytics data to improve the App's performance and user
+            experience:</p>
         <ul>
-            <li><strong>Game Session Information:</strong> Game mode, board size, duration, moves count, and game results</li>
+            <li><strong>Game Session Information:</strong> Game mode, board size, duration, moves count, and game
+                results</li>
             <li><strong>App Usage Patterns:</strong> Features used, navigation paths, and interaction patterns</li>
             <li><strong>Performance Data:</strong> App crashes, errors, loading times, and technical issues</li>
-            <li><strong>Device Information:</strong> Operating system version, app version, and general device characteristics</li>
+            <li><strong>Device Information:</strong> Operating system version, app version, and general device
+                characteristics</li>
         </ul>
 
         <h3>1.2 Multiplayer Functionality Data</h3>
         <p>For multiplayer games, we collect minimal data necessary for functionality:</p>
         <ul>
-            <li><strong>Anonymous Device ID:</strong> Anonymous device identifiers for app functionality and multiplayer connections</li>
-            <li><strong>Connection Data:</strong> IP address hash (for rate limiting and security), user agent string</li>
+            <li><strong>Anonymous Device ID:</strong> Anonymous device identifiers for app functionality and multiplayer
+                connections</li>
+            <li><strong>Connection Data:</strong> IP address hash (for rate limiting and security), user agent string
+            </li>
             <li><strong>Game Room Data:</strong> Temporary game session information for multiplayer matches</li>
         </ul>
 
@@ -103,7 +125,8 @@
         <p>For leaderboard functionality, you may optionally provide:</p>
         <ul>
             <li><strong>User Alias:</strong> A display name for leaderboard rankings</li>
-            <li><strong>Responsibility:</strong> You are responsible for not providing any personalized information in your alias</li>
+            <li><strong>Responsibility:</strong> You are responsible for not providing any personalized information in
+                your alias</li>
             <li><strong>Leaderboard Data:</strong> Game scores and rankings associated with your alias</li>
         </ul>
 
@@ -283,33 +306,34 @@
 
         <div class="last-updated">
             <p>This privacy policy is effective as of January 1, 2025.</p>
-            <p>Last updated: October 9, 2025</p>
+            <p>Last updated: December 15, 2025</p>
             <p>Triliza - A privacy-first gaming experience</p>
         </div>
     </div>
     <script>
-        (function() {
+        (function () {
             // Email protection with multiple obfuscation layers
             const parts = ['triliza', '.app', '@', 'gmail', '.com'];
             const emailElement = document.getElementById('email-contact');
-            
+
             // Create clickable email with mailto
             const link = document.createElement('a');
             link.href = 'mailto:' + parts.join('');
             link.textContent = parts.join('');
             link.style.textDecoration = 'none';
             link.style.color = '#3498db';
-            
+
             // Add hover effect
-            link.addEventListener('mouseenter', function() {
+            link.addEventListener('mouseenter', function () {
                 this.style.textDecoration = 'underline';
             });
-            link.addEventListener('mouseleave', function() {
+            link.addEventListener('mouseleave', function () {
                 this.style.textDecoration = 'none';
             });
-            
+
             emailElement.appendChild(link);
         })();
     </script>
 </body>
+
 </html>
