@@ -89,8 +89,8 @@
         <h1>Privacy Policy for Triliza</h1>
 
         <div class="highlight">
-            <strong>Last Updated:</strong> December 15, 2025<br>
-            <strong>App Version:</strong> 1.13.0<br>
+            <strong>Last Updated:</strong> December 31, 2025<br>
+            <strong>App Version:</strong> 1.15.0<br>
             <strong>Effective Date:</strong> January 1, 2025
         </div>
 
@@ -130,15 +130,25 @@
             <li><strong>Leaderboard Data:</strong> Game scores and rankings associated with your alias</li>
         </ul>
 
-        <h3>1.4 Local Storage Data</h3>
+        <h3>1.4 Game Progress Data</h3>
+        <p>For challenge mode functionality, we store game progress data:</p>
+        <ul>
+            <li><strong>Completed Levels:</strong> List of challenge levels you have completed (stored in Firestore for
+                cross-device sync)</li>
+            <li><strong>Highest Unlocked Level:</strong> The highest challenge level you have unlocked (stored in
+                Firestore)</li>
+            <li><strong>User Flags:</strong> Preference flags and dialog states (e.g., which features have been
+                introduced, welcome dialog shown) stored in Firestore</li>
+        </ul>
+
+        <h3>1.5 Local Storage Data</h3>
         <p>We store certain data locally on your device:</p>
         <ul>
-            <li><strong>Game Progress:</strong> Challenge levels completed, highest unlocked level</li>
             <li><strong>Settings:</strong> Theme preferences, sound settings, vibration preferences</li>
             <li><strong>Consent Status:</strong> Your analytics consent decision</li>
         </ul>
 
-        <h3>1.5 Bug Reports (Optional)</h3>
+        <h3>1.6 Bug Reports (Optional)</h3>
         <p>If you choose to report bugs, we may collect:</p>
         <ul>
             <li>Error descriptions and technical details</li>
@@ -184,11 +194,19 @@
             <li>Maintain game statistics and achievements</li>
         </ul>
 
-        <h3>3.4 Local Data</h3>
+        <h3>3.4 Game Progress Data</h3>
+        <p>We use game progress data to:</p>
+        <ul>
+            <li>Track your challenge level completion and unlock progression</li>
+            <li>Sync your progress across devices</li>
+            <li>Remember which features and dialogs you have seen</li>
+            <li>Provide personalized game experience</li>
+        </ul>
+
+        <h3>3.5 Local Data</h3>
         <p>We use locally stored data to:</p>
         <ul>
-            <li>Remember your game progress and settings</li>
-            <li>Provide personalized game experience</li>
+            <li>Remember your settings and preferences</li>
             <li>Respect your privacy preferences</li>
         </ul>
 
@@ -217,7 +235,16 @@
             <li>No personal information is stored with the alias</li>
         </ul>
 
-        <h3>4.4 Local Data</h3>
+        <h3>4.4 Game Progress Data</h3>
+        <ul>
+            <li>Stored in Google Cloud Firestore for cross-device synchronization</li>
+            <li>Completed levels and highest unlocked level are synced across your devices</li>
+            <li>User flags track preferences and feature introductions</li>
+            <li>Can be deleted by the user at any time</li>
+            <li>Protected by Firebase security rules</li>
+        </ul>
+
+        <h3>4.5 Local Data</h3>
         <ul>
             <li>Stored locally on your device</li>
             <li>Not transmitted to our servers</li>
@@ -239,6 +266,7 @@
             <li>You can clear local data by uninstalling the app</li>
             <li>You can reset game progress through the app settings</li>
             <li>You can delete your user alias and associated leaderboard data at any time</li>
+            <li>You can delete your game progress data (completed levels, flags) stored in Firestore</li>
             <li>You can request deletion of any personal data we may have collected</li>
         </ul>
 
@@ -248,8 +276,9 @@
         <p>We use the following Google services:</p>
         <ul>
             <li><strong>Firebase Analytics:</strong> For anonymous usage analytics (with consent)</li>
-            <li><strong>Cloud Firestore:</strong> For multiplayer game functionality</li>
-            <li><strong>Firebase Auth:</strong> For anonymous authentication in multiplayer</li>
+            <li><strong>Cloud Firestore:</strong> For multiplayer game functionality, game progress synchronization, and
+                user preferences</li>
+            <li><strong>Firebase Auth:</strong> For anonymous authentication in multiplayer and challenge modes</li>
         </ul>
 
         <h3>6.2 WebRTC</h3>
@@ -306,7 +335,7 @@
 
         <div class="last-updated">
             <p>This privacy policy is effective as of January 1, 2025.</p>
-            <p>Last updated: December 15, 2025</p>
+            <p>Last updated: December 31, 2025</p>
             <p>Triliza - A privacy-first gaming experience</p>
         </div>
     </div>
